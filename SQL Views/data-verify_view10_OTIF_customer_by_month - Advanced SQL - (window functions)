@@ -1,0 +1,19 @@
+"customer_name","city","month_year","otif_pct","month_on_month_change"
+"Lotus Mart","Ahmedabad","2022-03",9.00,NULL
+"Lotus Mart","Ahmedabad","2022-04",8.67,-0.33
+"Lotus Mart","Ahmedabad","2022-05",7.69,-0.98
+"Lotus Mart","Ahmedabad","2022-06",7.92,0.23
+"Lotus Mart","Ahmedabad","2022-07",6.70,-1.22
+"Lotus Mart","Ahmedabad","2022-08",7.81,1.11
+"Lotus Mart","Surat","2022-03",19.90,NULL
+"Lotus Mart","Surat","2022-04",23.81,3.91
+"Lotus Mart","Surat","2022-05",24.65,0.84
+"Lotus Mart","Surat","2022-06",18.81,-5.84
+"Lotus Mart","Surat","2022-07",20.59,1.78
+"Lotus Mart","Surat","2022-08",19.79,-0.80
+"Lotus Mart","Vadodara","2022-03",17.11,NULL
+"Lotus Mart","Vadodara","2022-04",21.00,3.89
+"Lotus Mart","Vadodara","2022-05",20.51,-0.49
+"Lotus Mart","Vadodara","2022-06",18.46,-2.05
+"Lotus Mart","Vadodara","2022-07",19.17,0.71
+"Lotus Mart","Vadodara","2022-08",21.72,2.55
