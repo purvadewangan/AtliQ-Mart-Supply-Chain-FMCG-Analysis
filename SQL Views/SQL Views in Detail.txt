@@ -1,0 +1,44 @@
+
+## SQL Views in Detail
+
+### 03_views_core_metrics.sql
+
+v_otif_summary
+Company-level OT%, IF%, OTIF% vs targets. Uses CTE pattern to compute target averages from dim_targets_orders independently before joining to order metrics. Prevents join-before-aggregate distortion confirmed during development.
+
+v_otif_by_city
+City-level breakdown with gap to company average target. Feeds city comparison bar chart on Executive Summary page.
+
+v_otif_by_customer
+Customer-level metrics benchmarked against each customer's individual contracted target. All 35 customers sorted by OTIF gap ascending. Feeds the customer matrix on Operational Diagnostic page.
+
+v_otif_by_month_week
+Daily time series with month and week labels. Enables Power BI drill-down from month to week to day. Feeds the switchable trend chart.
+
+v_lifr_vofr_by_product
+Product-level LIFR, VOFR, IF failure rate, and average shortfall. 18 products sorted by failure rate. Feeds the product table on Product page.
+
+### 04_views_diagnostic.sql
+
+v_customer_health_score
+Composite weighted health score per customer. OTIF weighted 50%, OT 25%, IF 25%. LEAST function caps performance at 1.0 to prevent above-100 scores. Critical below 50, At Risk 50 to 75, Healthy above 75.
+
+v_at_risk_customers
+Risk flag and severity per customer. Three severity levels: Critical (OTIF below 50% of target), Severe (below 75% of target), Moderate (below target).
+
+v_late_orders_detail
+All 16,491 late order lines with days_late, customer, product, and date detail. Operational drill-through for supply chain team.
+
+v_short_orders_detail
+All 19,435 short order lines with shortfall_qty, shortfall_pct, customer, and product detail. Operational drill-through for warehouse team.
+
+### 05_views_advanced.sql
+
+v_customer_monthly_trend
+Month-by-month OTIF per customer with previous month value and month-on-month change computed using LAG window function partitioned by customer and city.
+
+v_customer_city_rank
+Customer ranking within each city by OTIF using RANK window function partitioned by city. Also includes overall rank across all 35 customers.
+
+v_consecutive_underperformers
+Customers below their OTIF target for 3 or more consecutive months using running SUM window function. The strongest contractual non-renewal signal in the entire analytical layer.
