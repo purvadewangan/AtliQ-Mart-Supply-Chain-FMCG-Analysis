@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="Atliq_logo_for_dashboard.png" alt="Logo" width="150">
+<img src="dashboard_pages/Atliq_logo_for_dashboard.png" alt="Logo" width="150">
 
 # AtliQ Mart Supply Chain FMCG Analysis
 
