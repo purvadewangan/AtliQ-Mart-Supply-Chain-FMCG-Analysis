@@ -430,15 +430,6 @@ That is the difference between analysis that describes the past and analysis tha
 
 ---
 
-## Project Structure
----
-
-## Notebooks
-
-### 01_profiling_and_dq.ipynb
-Data Quality and Profiling
-
-
 ## What I Gained With This Project
 
 I came into this project with almost no exposure to FMCG supply chain operations.
