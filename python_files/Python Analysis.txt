@@ -1,0 +1,30 @@
+
+## Python Analysis Structure
+---
+
+## Notebooks in Detail
+
+### 01_profiling_and_dq.ipynb
+Data Quality and Profiling
+
+Covers null checks across all 6 tables, duplicate detection, cardinality validation revealing the beverages casing error, foreign key validation with zero orphans confirmed, date range analysis identifying the 4-day late delivery bleed past the window boundary, OTIF target independence verification, and aggregate reconciliation confirming perfect match across 31,729 orders. A complete DQ summary report is produced as the final output.
+
+### 02_cleaning.ipynb
+Cleaning and Feature Engineering
+
+Applies the single correction identified in profiling (beverages to Beverages casing fix), renames columns to snake_case with _line suffix disambiguation, engineers four analytical columns (promise_window, days_late, shortfall_qty, shortfall_pct), builds the 25-column master dataframe joining all dimensions to fact_order_lines, and saves 7 cleaned files to the /cleaned directory. All downstream notebooks load exclusively from /cleaned.
+
+### 03_core_metrics.ipynb
+Core Metric Construction
+
+Computes all 7 metrics from the project brief at company, city, customer, product, category, and time granularity. Identifies the two-profile customer failure pattern (Primarily Short vs Primarily Late). Tests H4 (city OT concentration, partially rejected) and H7 and H8 (both rejected, flat OTIF confirmed). Saves 6 metric CSVs to /outputs.
+
+### 04_eda_and_rca.ipynb
+Exploratory Analysis and Root Cause Analysis
+
+Delay distribution analysis revealing capacity constraint signature. H5 test rejecting over-promising as a cause. H2 test rejecting supplier shortage as a cause. H3 test partially confirming warehouse execution errors as the primary IF driver. Customer clustering into four failure profiles with scatter visualization. SKU-city heatmap revealing Vadodara dominance at 13 of 15 worst combinations.
+
+### 05_predictive.ipynb
+Predictive Analytics Layer
+
+Statsmodels seasonal decomposition confirming flat trend with 1.08 point decline and negligible weekly seasonality. Prophet 90-day forecast confirming no self-correction without intervention. At-risk customer detection using 4-week rolling OTIF flagging 18 of 35 customers. Logistic regression producing AUC of 0.5077 and redirecting future data capture investment toward real-time operational signals.
