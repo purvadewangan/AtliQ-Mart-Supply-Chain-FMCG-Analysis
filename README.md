@@ -186,7 +186,7 @@ Five Pages:
 - Customer Intelligence: Single-customer drilldown with risk flags and trend analysis
 - Product and Supply: Product fill rate table, LIFR vs VOFR scatter, shortfall distribution
 
-<img src="dashboard_pages/00_Home_Page.png" alt="Logo" width="900">
+<img src="dashboard_pages/0_Home_Page.png" alt="Logo" width="900">
 <img src="dashboard_pages/01_Executive_Summary.png" alt="Logo" width="900">
 <img src="dashboard_pages/02_Operational_Diagnostics.png" alt="Logo" width="900">
 <img src="dashboard_pages/03_Customer_Intelligence.png" alt="Logo" width="900">
