@@ -177,14 +177,16 @@ Notable SQL engineering decisions:
 
 **What Power BI owns in this project:**
 
-Connection: Live connection to PostgreSQL views only. No raw tables loaded. No transformations in Power Query. All data preparation lives in SQL.
+Data Architecture & Connection: 
+- Data Pipeline: Utilized Python-computed clean files exclusively where no raw tables were loaded directly into the model.
+- Data Transformation: Data-type enforcement and minor schema adjustments were executed in Power Query, while the core data preparation entirely lives in Python.
 
-Five Pages:
-- Home: Navigation hub with project context and links
-- Executive Summary: Company KPIs, trend, city split
-- Operational Diagnostic: Customer matrix, late and short order detail tables
-- Customer Intelligence: Single-customer drilldown with risk flags and trend analysis
-- Product and Supply: Product fill rate table, LIFR vs VOFR scatter, shortfall distribution
+Dashboard Structure (Five Pages):
+- Home: A central navigation hub establishing the business project context and interactive page links
+- Executive Summary: High-level view of core company KPIs, tracking fulfillment trends (targets vs. gaps), and performance measured by city
+- Operational Diagnostic: Deep-dive into operational root causes, mapping late and short delivery details alongside the results of tested hypotheses
+- Customer Intelligence: Customer-based risk flags, failure profiles, service quality matrices, and historical trend analysis
+- Product & Supply Chain: Granular analysis of product and category fill rates, an interactive LIFR vs. VOFR category-based chart, and a 90-day forward-looking performance prediction model
 
 <img src="dashboard_pages/0_Home_Page.png" alt="Logo" width="900">
 <img src="dashboard_pages/01_Executive_Summary.png" alt="Logo" width="900">
