@@ -193,21 +193,18 @@ Five Pages:
 <img src="dashboard_pages/04_Product_and_Supply_Analysis.png" alt="Logo" width="900">
 
 Key Power BI features implemented:
-- Switchable metric trend chart using disconnected MetricSelector table and DAX SWITCH measure
-- Conditional formatting on matrix: red, amber, green based on gap thresholds
-- Custom tooltip pages on KPI cards for hover detail
-- Page overview panels triggered by button navigation
-- Applied filters display using dynamic DAX text measure
-- Slicer sync across all pages for persistent filtering
-- Benchmark toggle: Vs Target and Vs Last Month
-- Help layer overlay with dashboard usage guide
-- Mobile layout for Executive Summary page
-
-DAX measures created:
-- Selected Metric Value: drives the switchable chart
-- Applied Filters display: dynamic text for sidebar
-- Health Color: conditional formatting color logic
-- Gap Color: matrix cell background color logic
+- Page navigation using buttons
+- Mobile layout across all pages
+- Interactive cross-filtering across visuals
+- Product-city level supply chain diagnostics
+- Overview pages with dashboard download button
+- Multi-page stakeholder-focused dashboard design
+- Customer risk identification and health monitoring
+- KPI tracking against customer-specific OTIF targets
+- Conditional formatting for customer performance analysis
+- Forecast integration using Python-generated Prophet outputs
+- 28 DAX measures created under a dedicated table 'Measures_Table'
+- Analytical tables integrated with dimensional model for business reporting
 
 ---
 
@@ -335,6 +332,10 @@ the habit of being honest about what the data cannot tell me and turning that ho
 Most importantly I gained confirmation of something I believe about this work.
 
 The metric is not the answer. The question behind the metric is the answer. And knowing which question to ask before you open a single tool is the most underrated skill in data analytics.
+
+---
+
+This project was completed independently as a self-driven case study to strengthen my practical skills in supply chain analytics, business intelligence, and decision-focused data analysis.
 
 ---
 
