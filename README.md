@@ -206,6 +206,11 @@ Key Power BI features implemented:
 - 28 DAX measures created under a dedicated table 'Measures_Table'
 - Analytical tables integrated with dimensional model for business reporting
 
+__Model View__
+
+
+<img src="dashboard_pages/Model_View.png" alt="Logo" width="900">
+
 ---
 
 ## Key Business Insights
