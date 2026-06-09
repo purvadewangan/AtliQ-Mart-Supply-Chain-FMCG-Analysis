@@ -10,7 +10,7 @@
 [![Python](https://img.shields.io/badge/Python-3.11-blue?logo=python)](https://python.org)
 [![PostgreSQL](https://img.shields.io/badge/PostgreSQL-17-blue?logo=postgresql)](https://postgresql.org)
 [![Power BI](https://img.shields.io/badge/Power%20BI-Dashboard-yellow?logo=powerbi)](https://powerbi.microsoft.com)
-[![Dataset Source](https://img.shields.io/badge/Dataset_Source-CodeBasics-brightgreen)]()
+[![Dataset Source](https://img.shields.io/badge/Dataset_Source-CodeBasics-brightgreen)](https://codebasics.io/challenges/codebasics-resume-project-challenge/5)
 [![Domain](https://img.shields.io/badge/Domain-FMCG%20Supply%20Chain-orange)]()
 
 </div>
@@ -343,8 +343,8 @@ The metric is not the answer. The question behind the metric is the answer. And 
 **Purva Dewangan**
 Data Analyst | MBA in Data Science and Business Analytics
 
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-blue?logo=linkedin)](https://linkedin.com/in/yourprofile)
-[![GitHub](https://img.shields.io/badge/GitHub-Follow-black?logo=github)](https://github.com/yourusername)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-blue?logo=linkedin)](https://www.linkedin.com/in/purva156/)
+[![GitHub](https://img.shields.io/badge/GitHub-Follow-black?logo=github)](https://github.com/purvadewangan)
 
 Open to full-time opportunities in data analytics
 at global organizations.
