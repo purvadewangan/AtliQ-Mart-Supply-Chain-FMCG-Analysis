@@ -82,6 +82,7 @@ Key schema insight: The same retail brand operating in multiple cities has a sep
 
 This project follows a strict tool split principle.
 No analysis is duplicated across tools.
+
 ---
 
 ## Tool Stack
